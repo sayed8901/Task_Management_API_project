@@ -1,0 +1,9 @@
+venv
+
+task_mgt_venv
+
+task_management/.env
+
+db.sqlite3
+
+__pycache__/
