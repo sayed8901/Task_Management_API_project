@@ -136,7 +136,7 @@ The Django Rest Framework Admin Panel can be accessed using the following creden
 ### Postman Documentation
 You can view and test the API endpoints using Postman. Access the API documentation here:
 
-**Postman Documentation Link:** `https://documenter.getpostman.com/view/27420783/2sAYJ6CzUk`
+[Postman Documentation Link](https://documenter.getpostman.com/view/27420783/2sAYJ6CzUk)
 
 
 ### Base URL
