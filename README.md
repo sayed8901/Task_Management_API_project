@@ -6,15 +6,104 @@ The **Task Management - API Project** provides a detailed guide to the API endpo
 
 ---
 
-## General Information
 
-- All API endpoints require a **JWT access token** to be included in the request headers for authentication.
-- Authorization Header Format:
-  ```
-  Authorization: Bearer <token>
-  ```
+<br>
+
+## Technology Stack
+
+- **Backend Framework**: Django, Django REST Framework
+- **Database**: PostgreSQL (with Supabase deployment)
 
 ---
+
+<br>
+
+
+## Instructions to Run Locally
+
+### Prerequisites
+
+- Python 3.12.2
+- Django 4.2.4
+- Django REST Framework 3.15.2
+- PostgreSQL
+
+### Packages used:
+
+```bash
+asgiref==3.8.1
+Django==5.1.4
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+PyJWT==2.10.1
+sqlparse==0.5.3
+tzdata==2024.2
+```
+
+---
+
+<br>
+
+### Installation Steps
+
+1. Open `command prompt` in the folder directory where you want to create & run the project locally
+
+2. Copy the `repository_url` to **Clone the repository**
+
+   ```bash
+   git clone https://github.com/sayed8901/Task_Management_API_project.git
+   cd Task_Management_API_project
+   ```
+
+3. **Create a virtual environment**
+
+   ```bash
+   python -m venv task_mgt_venv
+   cd task_mgt_venv
+   Scripts\activate.bat
+   cd ..
+   ```
+
+4. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   code .
+   ```
+
+<br>
+
+5. **Apply migrations**
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+6. **Creating superuser**
+
+```bash
+python manage.py createsuperuser
+```
+
+7. **Run the development server**
+
+```bash
+python manage.py runserver
+```
+
+<br>
+
+8. **Finally, Access the application**
+
+- Local: http://127.0.0.1:8000/
+- Admin Panel: http://127.0.0.1:8000/admin/login/
+
+---
+
+<br>
+
+
 
 ### Admin Panel Access
 
@@ -30,10 +119,28 @@ The Django Rest Framework Admin Panel can be accessed using the following creden
 
 ---
 
+
+## General Information
+
+- All API endpoints require a **JWT access token** to be included in the request headers for authentication.
+- Authorization Header Format:
+  ```
+  Authorization: Bearer <token>
+  ```
+
+---
+
+
 ## API Endpoints
 
+### Postman Documentation
+You can view and test the API endpoints using Postman. Access the API documentation here:
+
+**Postman Documentation Link:** `https://documenter.getpostman.com/view/27420783/2sAYJ6CzUk`
+
+
 ### Base URL
-`http://127.0.0.1:8000`
+**`http://127.0.0.1:8000`**
 
 
 ### Authentication
