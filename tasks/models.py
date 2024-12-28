@@ -26,3 +26,6 @@ class Task(models.Model):
     
     created_at = models.DateTimeField(auto_now_add=True)
     due_date = models.DateTimeField()
+
+    def __str__(self):
+        return f"'{self.title}' {self.status} by '{self.assigned_to}' (for '{self.project}')"
